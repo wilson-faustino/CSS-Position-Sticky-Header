@@ -1,0 +1,43 @@
+
+
+/* ------------------ FORM ---------------- */
+
+main#dashboards > form#formulario {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+
+    
+}
+
+/* buscar fii */
+
+main#dashboards > form#formulario > div#go-to-dash-fii-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.5);
+    height: 3vh;
+}
+main#dashboards > form#formulario > div#go-to-dash-fii-wrapper > input#input-search-fii {
+    width: 90%;
+    height: 100%;
+}
+main#dashboards > form#formulario > div#go-to-dash-fii-wrapper > button#btn-search-fii {
+    width: 10%;
+}
+
+/* botão dash mercado */
+main#dashboards > div#content-wrapper > div#go-to-dash-mercado-wrapper {
+    display: block;
+}
+main#dashboards > div#content-wrapper > div#go-to-dash-mercado-wrapper > button#btn-dash-mercado {
+
+}
+
+
+
+
+

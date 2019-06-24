@@ -1,0 +1,205 @@
+
+
+
+/* ---------------- RESET ---------------- */
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Titillium+Web&display=swap');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+:root {
+    --main-color: #158891;
+    --second-color: rgb(251, 251, 251);
+    --sticky-size: 10vh;
+    --header-size: 12vh;
+    --footer-size: 25vh;
+}
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1rem;
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+body::before {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background: repeating-linear-gradient(to bottom, rgba(200,230,200,0.2), rgba(0,30,0,0.1)),
+                url(../img/iStock-real-estate-1030x434.jpg) right no-repeat;
+    opacity: 0.8;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+}
+div#container {
+    height: 200vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+}
+div#container::before {
+    content: '';
+    display: block;
+    height: var(--sticky-size);
+}
+
+
+/* ---------------- HEADER ---------------- */
+
+
+header#cabecalho {
+    height: var(--header-size);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 50, 0, 0.1);
+    box-shadow: 1px 1px 2px 2px rgba(0, 50, 0, 0.15);
+}
+
+
+/* HEADER - logo ---------------- */
+
+
+header#cabecalho > div#logo-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+header#cabecalho > div#logo-container > div#box-logo-p1-img {
+    max-width: 25%;
+    max-height: 50%;
+    margin: 0 15px;
+}
+header#cabecalho > div#logo-container > div#box-logo-p2-label {
+    max-width: 75%;
+    max-height: 50%;
+}
+header#cabecalho > div#logo-container > * > * {
+    font-size: calc(var(--header-size) * 0.30);
+}
+header#cabecalho > div#logo-container > div#box-logo-p2-label > label > span#logo-fii {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+/* HEADER - navbar ---------------- */
+
+
+header#cabecalho > nav#navbar > ul#list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+header#cabecalho > nav#navbar > ul#list-container > li.list-item {
+    list-style: none;
+    display: grid;
+    place-content: center;
+    width: auto;
+    height: calc(var(--header-size) * 0.42);
+    padding: 0 6px;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+}
+header#cabecalho > nav#navbar > ul#list-container > li.list-item:nth-child(1) {
+    background: rgba(0, 100, 0, 0.3);
+    margin: 0 15px 0 0;
+}
+header#cabecalho > nav#navbar > ul#list-container > li.list-item:nth-child(2) {
+    background: var(--second-color);
+    margin: 0 0 0 15px;
+}
+header#cabecalho > nav#navbar > ul#list-container > li.list-item > a {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    text-align: center;
+    cursor: pointer;
+}
+a#criar-conta {color: var(--second-color);}
+a#login {color: var(--main-color);}
+
+
+/* ---------------- MAIN SECTION ---------------- */
+
+
+main#dashboards > h1 {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+
+  
+
+}
+
+main#dashboards {
+    height: calc(100vh - var(--sticky-size) - var(--header-size));
+    width: 100%;
+    display: grid;
+    place-content: center;
+    position: relative;
+
+}
+    /* ----------- SEGUNDA SECTION -------- */
+    section#seg {
+        height: 100vh;
+    }
+    
+    
+   /* ---------------- FOOTER ---------------- */
+   footer#rodape {
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       height: 25vh;
+       background-color: var(--main-color);
+       color: var(--second-color);
+   }
+   footer#rodape > div#ul-block-container {
+       display: block;
+       width: 100%;
+       height: 35%;
+
+     
+   }
+
+   footer#rodape > div#ul-block-container > ul#nos-encontre-ul {
+       width: 100%;
+       height: 100%;
+       display: flex;
+       flex-flow: row wrap;
+       justify-content: center;
+       align-items: center;
+
+     
+   }
+
+   footer#rodape > div#ul-block-container > ul#nos-encontre-ul > li.nos-encontre-list-itens {
+       list-style: none;
+   }
